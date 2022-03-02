@@ -1,0 +1,479 @@
+/* Paleta de Colores a Utilizar */
+
+
+.color1 {color: #ff4d8a;}
+.color2 {color: #ff8758;}
+.color3 {color: #ffc14c;}
+.color4 {color: #ffef68;}
+.color5 {color: #f7ff8b;}
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Font */
+
+body{
+    font-family: 'Barlow', sans-serif;
+}
+
+
+
+/* Header */
+
+.logo {
+    width: 18%;
+    padding-top: 1%;
+}
+
+.logo:hover {
+    width: 19%;
+}
+.header-container {
+    
+    background-image: linear-gradient( to right , yellow , violet);
+    position: sticky;
+    top: 0px;
+    height: 40px;
+    z-index: 50;
+}
+
+.navbar {
+    background-image: linear-gradient( to right , yellow , violet);
+}
+/* nav > ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-weight:normal;
+    color: #381101;
+    height: 30px;
+    align-items: center;
+    
+
+} */
+
+
+
+
+
+
+a:hover {
+    color: #ff4d8a;
+    
+    
+}
+
+li:hover {
+   
+  
+
+    text-align: center;
+    font-weight: bolder;
+}
+
+a {
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+
+/* Sección Carrusel */
+
+.container-carrusel {
+    background-image: url('../img/foto-carrusel-1.jfif');
+    padding: 16%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-attachment: fixed;
+    
+}
+
+/* H1 */
+
+.container-h {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+
+}
+
+h1 {
+     
+    color: #ff4d8a;
+    font-size: 700%;
+    padding-bottom: 50px;
+    padding-top: 0px;
+    background-color: beige;
+    line-height: 50px;
+    
+    
+}
+
+h2 {
+     
+    color: #e92368;
+    font-size: 350%;
+    padding-bottom: 0px;
+    padding-top: 52px;
+    
+    
+}
+
+/* Sección Intro */
+
+.intro-container {
+
+    margin: 5%;
+}
+
+/* Sección MVP */
+
+
+     /* video con opacidad */
+.container-opacidad{
+    position: relative;
+}
+.img-opacidad{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.video-players{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container-opacidad:hover .img-opacidad {
+    opacity: 0.3;
+  }
+  
+  .container-opacidad:hover .video-players {
+    opacity: 1;
+  }    
+       /* finvideo con opacidad */
+
+
+.mvp-container {
+  
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    background-color: #faffb8;
+    grid-template-areas: 
+    'one two three' 
+    ;
+    margin-top: 5%;
+    grid-gap: 5px;
+ 
+    }
+
+    .players{
+        background-image: linear-gradient(to right, yellow, orange
+        );
+    }
+    iframe{
+        width: 100%;
+    }
+
+.container-h {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+    /* <!-- Sección Equipos del Valle y Link a sus Páginas --> */
+
+
+.rank-container {
+    
+    margin-bottom: 80px;
+    background-color: #f7ff8b;
+    height: 1%;
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+
+.sub-titles {
+    background-image:
+    linear-gradient(to right, yellow , magenta);
+    padding: 50px;
+    font-size: 35px;
+    color: #ffffff;
+    
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+/* Footer */
+
+footer{
+    background-color: #fffe75;
+    color: #c2c2c2;
+    height: 210px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(249, 184, 255));
+    padding-top: 10%;
+
+}
+
+/* Subscribe */
+
+.subscribe {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgb(255, 0, 43), magenta);
+    height:450%;
+}
+
+h3 {
+    padding-bottom: 2%;
+    color: #f8cdbc;
+    font-size:x-large;
+    padding-left: 15%;
+}
+
+.container-atajos {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
+    transform: translate(-5%);
+}
+
+#atajos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6%;
+    width: 100%;
+    align-items: center;
+   
+        
+}
+
+#atajos > li {
+    margin-top: 2.5%;
+    list-style-type: none;
+}
+
+#atajos > li > a {
+    color: #e92368;
+}
+
+/* Redes */
+
+.item-redes:hover {
+    transform: scale(1.5);
+    
+}
+
+
+.redes-container{
+    
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+    align-items: center;
+    
+    
+
+}
+
+.item-redes {
+    width: 7%;  
+    transition: all 0.5s;  
+}
+
+/* Firma */
+
+/* .firma-container:hover > #gota-footer{
+    transform: translateY(12px) 4s;
+
+} */
+
+
+
+.firma-container {
+    display: flex;
+    width: 8%;
+    align-items: center;   
+    flex-direction: row;
+    
+}
+
+/* .violeta-pegado:hover {
+    transform: rotate(90deg) scale(2);
+    transition: all 2s ease-out;
+} */
+
+#gota-footer:hover {
+        /* opacity: 100 ; */
+        animation: opacidad 180s;
+          transform: translateY(140px) scale(0);
+          transition: all 4s ease-in-out;
+    
+  }
+
+  @keyframes opacidad {
+    1.5% {
+        opacity: 1;
+    }
+
+    
+}
+
+#gota-footer {
+    transform: translate(0 , -40px);
+    opacity: 0;
+    
+}
+
+
+
+/* Otros */
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+
+
+
+
+/* Equipos.html */
+
+/* Seccion Selección Fotos Equipos */
+
+.seleccion-equipos-container {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* Patrocinadores.html */
+
+.info-patrocinadores {
+    /* position: relative; */
+    margin: 5%;
+}
+
+.patrocinadores-container {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 80%;
+    grid-gap: 10px;    
+}
+
+.grid-item {
+    border: 1px solid black;
+
+}
+
+.main-patrocinadores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@media screen and (min-width: 481px) and (max-width: 980px) {
+
+    .container-h {
+        transform: scale(70%);
+    }
+   .patrocinadores-container {
+       grid-template-columns: repeat(2, 1fr);
+   }
+   
+    
+}
+
+@media screen and (min-width: 0px) and (max-width: 590px) {
+
+    .container-h {
+        transform: scale(50%);
+        padding: 0%;
+
+    }
+ 
+    .mvp-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .patrocinadores-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 512px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+    
+    
+/* Preguntas.html */
+
+.foto-preg-1 {
+   width: 90%;
+   margin-right: 1%;
+   
+
+}
+
+.foto-preg-2 {
+    width: 100%;
+}
+
+.foto-preg-3 > img {
+
+    width: 10%;
+    
+
+}
+
+.exp-cont {
+    margin-top: 5%;
+    border: none;
+    margin-left: 70%;
+    width: 30%;
+    
+}

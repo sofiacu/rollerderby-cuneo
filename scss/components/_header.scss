@@ -1,0 +1,39 @@
+@import '../base/colours';
+@import '../base/variables';
+header{
+    background-image: $bg-gradient-1;
+    position: sticky;
+    top: 0px;
+    height: 40px;
+    z-index: 50;
+
+    nav {
+        background-image: linear-gradient( to right , yellow , violet);
+
+            .div-logo-cont {
+                .div-logo {
+                    .ul-logo {
+                        li {
+                            &:hover {
+                                text-align: center;
+                                font-weight: bolder;
+                            }
+                        }
+                        .li-logo {
+                            a{
+                                color:rgb(0, 0, 0);    text-decoration: none;
+                                &:hover {
+                                    color: nth($colours, 1)
+                                }
+                            }
+                            img {
+                                width: 55%;
+                                margin-top: 0%;
+                            }
+                            
+                        }
+                    }
+                }
+            }  
+    }
+}

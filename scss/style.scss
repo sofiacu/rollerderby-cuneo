@@ -1,0 +1,26 @@
+/* importa components */
+
+@import 'components/header';
+@import 'components/mvp';
+@import 'components/rank';
+@import 'components/footer';
+
+/* import base */
+@import 'base/colours';
+@import 'base/variables';
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+    main {
+        .intro-container {
+            margin: 5%;
+        }
+    }
+}
+
