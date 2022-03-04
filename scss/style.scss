@@ -4,11 +4,14 @@
 @import 'components/mvp';
 @import 'components/rank';
 @import 'components/footer';
+@import 'components/eventos';
 
 /* import base */
 @import 'base/colours';
 @import 'base/variables';
-
+@import 'base/extends';
+@import 'base/mixins';
+@import 'base/maps';
 
 * {
     margin: 0px;
@@ -19,8 +22,12 @@ body{
     font-family: 'Barlow', sans-serif;
     main {
         .intro-container {
-            margin: 5%;
+            @include p(5%, flex, center);
         }
     }
+}
+
+img {
+    width: 100%;
 }
 

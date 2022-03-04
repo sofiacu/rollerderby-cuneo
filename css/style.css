@@ -1,5 +1,3 @@
-fdfddf
-
 /* importa components */
 header {
   background-image: linear-gradient(to right, yellow, violet);
@@ -26,6 +24,7 @@ header nav .div-logo-cont .div-logo .ul-logo .li-logo img {
   width: 55%;
   margin-top: 0%;
 }
+
 
 .container-h {
   display: flex;
@@ -89,18 +88,14 @@ header nav .div-logo-cont .div-logo .ul-logo .li-logo img {
   background-image: linear-gradient(to right, yellow, magenta);
   padding: 50px;
   font-size: 35px;
-  color: #ffffff;
+  color: white;
   text-align: center;
   margin-bottom: 50px;
   margin-top: 40px;
 }
 
-.rank-container {
-  margin-bottom: 80px;
-  background-color: #f7ff8b;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
+.rank-container .logo-team {
+  margin-right: 5%;
 }
 
 footer {
@@ -180,7 +175,39 @@ footer .firma-container .dibus .gota-footer:hover {
   transition: all 4s ease-in-out;
 }
 
+.next-events-container, .rank-container {
+  margin-bottom: 80px;
+  background-color: #f7ff8b;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-events {
+  margin-top: 10%;
+}
+.container-events .lorem {
+  color: violet;
+  margin: 7%;
+  display: flex;
+  justify-content: center;
+}
+
+.next-events-container .next-event {
+  margin-right: 5%;
+}
+
 /* import base */
+.rank-container, .next-events-container {
+  margin-bottom: 80px;
+  background-color: #f7ff8b;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -191,6 +218,12 @@ body {
 }
 body main .intro-container {
   margin: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,19 +1,28 @@
+@import '../base/maps';
+@import '../base/colours';
+
 .sub-titles {
-    background-image:
-    linear-gradient(to right, yellow , magenta);
-    padding: 50px;
-    font-size: 35px;
-    color: #ffffff;
+    background-image: map-get($rank, bg-rank);
+    padding: map-get($rank, pad-rank);
+    font-size: map-get($rank, font-rank);
+    color: map-get($rank, color-font-rank);
     
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 40px;
+    text-align: map-get($rank, align-rank);
+    margin-bottom: map-get($rank, marg-bot-rank);
+    margin-top: map-get($rank, marg-top-rank);
 }
 
 .rank-container {
-    margin-bottom: 80px;
-    background-color: #f7ff8b;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
+
+    
+    @extend %rank;
+    
+
+    .logo-team {
+        
+        margin-right: 5%;
+        
+
+    }
+   
 }
